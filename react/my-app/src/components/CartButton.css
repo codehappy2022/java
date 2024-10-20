@@ -1,0 +1,29 @@
+.cart-button {
+    position: fixed; /* Đặt vị trí cố định */
+    top: 20px; /* Khoảng cách từ trên */
+    right: 20px; /* Khoảng cách từ bên phải */
+    cursor: pointer;
+    font-size: 18px; /* Kích thước nhỏ hơn */
+    color: #333;
+    border: 2px solid green; /* Viền xanh */
+    border-radius: 50%; /* Tạo hình tròn */
+    padding: 8px; /* Khoảng cách bên trong */
+    background-color: white; /* Nền trắng */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Đổ bóng nhẹ */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu */
+}
+
+.cart-button:hover {
+    background-color: #f0f0f0; /* Đổi màu khi hover */
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px; /* Kích thước chữ nhỏ hơn */
+}

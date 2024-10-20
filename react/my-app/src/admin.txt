@@ -1,0 +1,74 @@
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import CustomerList from './components/CustomerList';
+import CustomerForm from './components/CustomerForm';
+import ProductList from './components/ProductList';
+import ProductForm from './components/ProductForm';
+import AccountList from './components/AccountList';
+import AccountForm from './components/AccountForm';
+import OrderItemList from './components/OrderItemList';
+import './App.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
+const App = () => (
+  <Router>
+    <div className="app-container">
+      <header className="app-header">
+        <h1 className="app-title">Cửa hàng của tôi!</h1>
+        <div className="header-buttons">
+          <Link to="/view" className="header-button">Xem Trang Web</Link>
+        </div>
+      </header>
+      <div className="main-content">
+        <nav className="sidebar">
+          <ul>
+            <li>
+              <Link to="/" className="button">
+                <i className="fas fa-shopping-cart"></i> Bán Hàng
+              </Link>
+            </li>
+            <li>
+              <Link to="/customers" className="button">
+                <i className="fas fa-users"></i> Khách Hàng
+              </Link>
+            </li>
+            <li>
+              <Link to="/products" className="button">
+                <i className="fas fa-box"></i> Sản Phẩm
+              </Link>
+            </li>
+            <li>
+              <Link to="/accounts" className="button">
+                <i className="fas fa-user"></i> Tài Khoản
+              </Link>
+            </li>
+            {/* Đã loại bỏ phần tử thống kê đơn hàng */}
+            <li>
+              <Link to="/settings" className="button">
+                <i className="fas fa-cog"></i> Cài Đặt
+              </Link>
+            </li>
+          </ul>
+        </nav>
+        <div className="content">
+          <Routes>
+            <Route path="/" element={<OrderItemList />} />
+            <Route path="/customers" element={<CustomerList />} />
+            <Route path="/customers/new" element={<CustomerForm />} />
+            <Route path="/customers/edit/:id" element={<CustomerForm />} />
+            <Route path="/products" element={<ProductList />} />
+            <Route path="/products/new" element={<ProductForm />} />
+            <Route path="/products/edit/:id" element={<ProductForm />} />
+            <Route path="/accounts" element={<AccountList />} />
+            <Route path="/accounts/new" element={<AccountForm />} />
+            <Route path="/accounts/edit/:id" element={<AccountForm />} />
+            {/* Đã loại bỏ Route cho thống kê */}
+            <Route path="/settings" element={<div>Cài Đặt</div>} />
+          </Routes>
+        </div>
+      </div>
+    </div>
+  </Router>
+);
+
+export default App;

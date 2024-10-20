@@ -1,0 +1,21 @@
+.table-header {
+    color: #003366; /* Màu xanh đậm */
+    font-weight: bold; /* In đậm */
+}
+
+.table td, .table th {
+    text-align: center; /* Căn giữa nội dung */
+}
+.center {
+    text-align: center;
+    color: #003366; /* Màu xanh đậm */
+  }
+  .table-header {
+    color: #003366; /* Màu xanh đậm */
+    font-weight: bold; /* In đậm */
+  }
+  
+  .text-center {
+    text-align: center; /* Căn giữa nội dung */
+  }
+  

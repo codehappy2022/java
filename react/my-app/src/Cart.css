@@ -1,0 +1,17 @@
+.zebra-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.zebra-table th, .zebra-table td {
+    text-align: left;
+    padding: 8px;
+}
+
+.zebra-table tr:nth-child(even) {
+    background-color: #D6EEEE; /* Màu nền cho hàng chẵn */
+}
+
+.zebra-table tr:nth-child(odd) {
+    background-color: white; /* Màu nền cho hàng lẻ */
+}

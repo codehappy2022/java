@@ -1,0 +1,211 @@
+/* Đặt màu nền chính của ứng dụng */
+.app-container {
+  background-color: #f5f5f5; /* Màu nền chính */
+  color: rgb(27, 7, 7); /* Màu chữ mặc định */
+  min-height: 100vh; /* Chiều cao tối thiểu để phủ toàn bộ chiều cao màn hình */
+  display: flex; /* Sử dụng flexbox */
+  flex-direction: column; /* Sắp xếp theo chiều dọc */
+}
+
+/* Định dạng header */
+.app-header {
+  display: flex; /* Sử dụng flexbox */
+  justify-content: space-between; /* Căn giữa không gian giữa tiêu đề và các nút */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  padding: 15px 20px; /* Thêm padding cho header */
+  background-color: white; /* Màu nền header trắng */
+}
+
+/* Định dạng tiêu đề */
+.app-title {
+  margin: 0; /* Bỏ margin */
+  font-size: 28px; /* Kích thước font chữ */
+}
+
+/* Định dạng các nút trong header */
+.header-buttons {
+  display: flex; /* Sử dụng flexbox cho các nút */
+  margin-top: 10px; /* Khoảng cách giữa tiêu đề và các nút */
+}
+
+.header-button {
+  color: white; /* Màu chữ trắng cho các nút */
+  background-color: #007bff; /* Màu nền xanh cho nút */
+  text-decoration: none;
+  padding: 5px 8px; /* Giảm padding để làm nhỏ nút */
+  border: 1px solid white; /* Viền trắng */
+  border-radius: 2px; /* Bo góc */
+  margin-left: 10px; /* Khoảng cách giữa các nút */
+  transition: background-color 0.3s; /* Hiệu ứng chuyển màu */
+  font-size: 14px; /* Kích thước chữ */
+}
+
+.header-button:hover {
+  background-color: #0056b3; /* Màu nền khi hover (màu xanh nhạt hơn) */
+}
+
+.header-button i {
+  margin-right: 4px; /* Khoảng cách giữa icon và chữ */
+}
+
+/* Định dạng main-content */
+.main-content {
+  display: flex; /* Sử dụng flexbox để sắp xếp sidebar và content */
+  flex-grow: 1; /* Cho phép nó mở rộng để chiếm không gian còn lại */
+}
+
+/* Định dạng sidebar */
+.sidebar {
+  background-color: #003366; /* Màu xanh biển */
+  padding: 15px;
+  border-radius: 5px;
+  width: 200px; /* Đặt chiều rộng cho sidebar */
+}
+
+.sidebar ul {
+  list-style-type: none; /* Loại bỏ dấu chấm trước các mục danh sách */
+  padding: 0; /* Bỏ padding mặc định */
+  margin: 0; /* Bỏ margin mặc định */
+}
+
+/* Định dạng các nút trong sidebar */
+.sidebar .button {
+  color: white; /* Màu chữ trắng cho các nút */
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 5px 0;
+}
+
+.sidebar .button:hover {
+  background-color: #00509e; /* Màu xanh biển nhạt hơn khi hover */
+}
+
+/* Định dạng phần nội dung chính */
+.content {
+  padding: 20px;
+  flex-grow: 1; /* Cho phép nội dung mở rộng để chiếm không gian còn lại */
+}
+
+/* Định dạng footer */
+.app-footer {
+  background-color: #000000; /* Màu xanh biển */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+/* App.css */
+
+/* Thêm định dạng cho phần thống kê đơn hàng */
+.order-statistics {
+  background-color: #fff; /* Nền trắng */
+  padding: 20px; /* Padding */
+  border-radius: 5px; /* Bo góc */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+  margin-top: 20px; /* Khoảng cách trên */
+}
+
+.order-statistics h2 {
+  margin-bottom: 10px; /* Khoảng cách dưới tiêu đề */
+}
+
+.product-image {
+  transition: transform 0.3s ease; /* Thêm hiệu ứng chuyển đổi cho hình ảnh */
+}
+
+.product-image:hover {
+  transform: scale(1.2); /* Phóng to hình ảnh lên 20% khi hover */
+}
+/* Định dạng header */
+.app-header {
+  display: flex; /* Sử dụng flexbox */
+  justify-content: space-between; /* Căn giữa không gian giữa tiêu đề và các nút */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  padding: 15px 20px; /* Thêm padding cho header */
+  background-color: white; /* Màu nền header trắng */
+}
+
+/* Định dạng ô tìm kiếm */
+.search-container {
+  display: flex; /* Sử dụng flexbox để căn giữa */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  margin-left: 15px; /* Khoảng cách bên trái */
+}
+
+/* Định dạng ô input tìm kiếm */
+.search-input {
+  padding: 8px; 
+  border-radius: 5px; 
+  border: 1px solid #ccc; 
+  width: 200px; 
+  margin-right: 10px; /* Khoảng cách giữa ô input và nút tìm kiếm */
+}
+
+/* Định dạng nút tìm kiếm */
+.search-button {
+  padding: 8px 12px; 
+  background-color: #00BFFF; 
+  color: white; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #008CBA; /* Màu nền khi hover */
+}
+/* Định dạng ô tìm kiếm */
+.search-container {
+  display: flex; /* Sử dụng flexbox để căn giữa */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  margin-left: 15px; /* Khoảng cách bên trái */
+  flex-grow: 1; /* Cho phép mở rộng để chiếm không gian */
+}
+
+.search-input {
+  padding: 10px; 
+  border-radius: 25px; /* Bo góc tròn hơn */
+  border: 1px solid #ccc; 
+  width: 300px; /* Mở rộng chiều rộng */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+  transition: box-shadow 0.3s ease; /* Hiệu ứng đổ bóng khi focus */
+}
+
+.search-input:focus {
+  outline: none; /* Bỏ outline khi focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Hiệu ứng khi focus */
+}
+
+.search-button {
+  padding: 10px 15px; 
+  background-color: #00BFFF; 
+  color: white; 
+  border: none; 
+  border-radius: 25px; /* Bo góc tròn */
+  cursor: pointer; 
+  transition: background-color 0.3s ease;
+  margin-left: 10px; /* Khoảng cách với ô nhập liệu */
+}
+
+.search-button:hover {
+  background-color: #008CBA; /* Màu nền khi hover */
+}
+.image-container img {
+  transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+  transform: scale(1.1); /* Phóng to 10% */
+}
+.image-container img {
+  transition: transform 0.3s ease;
+  width: 300px; /* Kích thước mặc định */
+  height: 300px; /* Kích thước mặc định */
+}
+
+.image-container img:hover {
+  transform: scale(1.2); /* Phóng to 20% khi hover */
+}

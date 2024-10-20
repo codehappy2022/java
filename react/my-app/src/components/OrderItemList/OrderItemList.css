@@ -1,0 +1,15 @@
+/* src/components/OrderItemList/OrderItemList.css */
+
+.container {
+    margin: 20px;
+  }
+  
+  .table-header {
+    background-color: #f8f9fa;
+    font-weight: bold;
+  }
+  
+  .btn {
+    margin: 5px;
+  }
+  
